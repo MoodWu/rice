@@ -3,34 +3,30 @@ Demo目录中是建议的项目目录结构，tools是代码工具，sample是�
 
 # 项目框架
 Demo目录中是建议的项目目录结构 
-
+```
 +-项目目录   
-   + **lib**  第三方包
-   |-+ gorm  mysql
-   |-+ router 路由库
-   |-+ avl 平衡二叉树
-   |-+ OA OA服务：TOF，GAS，数据中转站
-   |-+ workflow 精简工作流
-   |-+ util 工具类
-   |
-   +**model** 数据模型
-   |-+db 与数据库交互的模型
-   |-+view 与前端交互的模型
-   |
-   +**router** 路由设置
-   |-+middleware 路由中间件     
-   |-- register.go 自动生成路由表
-   |-- facade.go 自动生成接口实现
-   |
-   +**commcon** 项目中的通用处理代码
++lib  第三方包
+  |-+ gorm  mysql
+  |-+ router 路由库
+  |-+ avl 平衡二叉树
+  |-+ OA OA服务：TOF，GAS，数据中转站
+  |-+ workflow 精简工作流
+  |-+ util 工具类
++model 数据模型
+  |-+db 与数据库交互的模型
+  |-+view 与前端交互的模型
++router 路由设置
+  |-+middleware 路由中间件     
+  |-- register.go 自动生成路由表
+  |-- facade.go 自动生成接口实现
++commcon 项目中的通用处理代码
    |--const.go 常量，readonly变量
++service 服务类代码
    |
-   +**service** 服务类代码
-   |
-   +**start** 启动代码
+   +start 启动代码
    |--main.go 
    |--config.json 配置
-
+```
 
 目录之间的引用关系
 lib目录下的包不可引用项目中其他目录，lib之间的包可以引用
