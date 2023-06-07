@@ -1,0 +1,19 @@
+/*
+此文件为自动生成，生成时间:{{Date}}
+*/
+package router
+
+import (
+	"{{ProjectRoot}}/lib/router"
+	{{RefPackage}}
+)
+
+func Register() (*router.Router,error) {
+	r := router.New()
+	r.BasePath("/api")
+
+	{{CodeGenFunc}}
+
+	return r,nil
+}
+

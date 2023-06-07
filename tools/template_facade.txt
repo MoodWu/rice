@@ -1,0 +1,12 @@
+/*
+此文件为自动生成，生成时间:{{Date}}
+*/
+package router
+
+import (
+	"net/http"	
+	{{RefPackage}}
+)
+
+{{CodeGenFunc}}
+
